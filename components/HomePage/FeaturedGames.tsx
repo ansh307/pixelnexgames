@@ -38,7 +38,7 @@ export default function FeaturedGames() {
 
   return (
     <section className="py-40 bg-[#F2F2F2]">
-      <div className="mx-auto px-48">
+      <div className="mx-auto  max-w-[1580px] px-6">
         {/* Heading */}
 
         <div className="mb-16">
