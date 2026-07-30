@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Blocks } from "lucide-react";
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
-const studioLinks = ["About", "Our Team", "Games", "Blog", "News", "Contact"];
+const studioLinks = ["About", "Games", "Contact"];
 
 const gameLinks = [
   "Cyber Arena",

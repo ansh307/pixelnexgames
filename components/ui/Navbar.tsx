@@ -10,13 +10,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const links = [
-  { title: "PixelNex+", href: "#" },
+  { title: "Home", href: "/" },
   { title: "Games", href: "#", dropdown: true },
   { title: "About", href: "#" },
-  { title: "Blog", href: "#" },
-  { title: "Careers", href: "#" },
+  { title: "FAQs", href: "#" },
   { title: "Support", href: "#" },
-  { title: "Contact", href: "#" },
 ];
 
 export default function Navbar() {
@@ -111,7 +109,7 @@ export default function Navbar() {
           href="#"
           className="rounded-full border border-orange-500 px-8 py-3.5 text-[16px] font-semibold transition hover:bg-orange-500 hover:text-white hidden lg:inline-block"
         >
-          Visit shop
+          Contact
         </Link>
       </nav>
     </header>
