@@ -18,7 +18,7 @@ const TermsOfServicePage = () => {
           </>
         }
         description="These Terms of Service outline the rules and conditions for using the PixelNex website, games, and services. By accessing our platform, you agree to these terms and help us maintain a safe and enjoyable experience for everyone."
-        image="/homepage/img/terms-hero.png"
+        image="/banners/legals.avif"
         imageAlt="PixelNex Terms of Service"
       />
       <TermsOfServiceSection />

@@ -20,7 +20,7 @@ const SupportPage = () => {
           </>
         }
         description="Need assistance? Find answers, troubleshoot issues, or get in touch with our support team. We're committed to making your PixelNex experience as smooth as possible."
-        image="/homepage/img/support-hero.png"
+        image="/banners/support-hero.avif"
         imageAlt="PixelNex Support"
       />
       <SupportSection />

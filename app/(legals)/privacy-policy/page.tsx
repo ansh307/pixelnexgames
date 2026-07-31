@@ -18,7 +18,7 @@ const PrivacyPolicyPage = () => {
           </>
         }
         description="We're committed to protecting your personal information and being transparent about how we collect, use, and safeguard your data while you enjoy PixelNex games and services."
-        image="/homepage/img/privacy-hero.png"
+        image="/banners/legals.avif"
         imageAlt="PixelNex Privacy Policy"
       />
       <PrivacyPolicySection />

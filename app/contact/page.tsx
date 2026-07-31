@@ -19,7 +19,7 @@ const ContactPage = () => {
           </>
         }
         description="Have a question, business inquiry, partnership opportunity, or just want to say hello? We'd love to hear from you. Reach out and our team will get back to you as soon as possible."
-        image="/homepage/img/contact-hero.png"
+        image="/banners/contact-hero.avif"
         imageAlt="Contact PixelNex"
       />
       <ContactSection />

@@ -14,7 +14,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const links = [
   { title: "Home", href: "/" },
-  { title: "Games", href: "#" },
+  { title: "Games", href: "/#featured-games" },
   { title: "About", href: "/about" },
   { title: "FAQs", href: "/faqs" },
   { title: "Support", href: "/support" },
@@ -62,6 +62,7 @@ export default function Navbar() {
             duration: 0.45,
             ease: "power3.out",
           });
+          setGamesOpen(false);
         },
 
         onEnterBack: () => {
@@ -124,7 +125,13 @@ export default function Navbar() {
               >
                 {item.title === "Games" ? (
                   <button
-                    onClick={() => setGamesOpen((prev) => !prev)}
+                    onClick={() => {
+                      if (pathname === "/") {
+                        setGamesOpen((prev) => !prev);
+                      } else {
+                        window.location.href = "/#featured-games";
+                      }
+                    }}
                     className={`group flex items-center gap-1 text-[15px] font-semibold transition-colors ${
                       gamesOpen
                         ? "text-orange-500"
@@ -190,10 +197,11 @@ export default function Navbar() {
             <div className="mx-auto max-w-[1800px] px-6 py-8 lg:px-10 xl:px-14">
               <div className="grid grid-cols-2 gap-6 lg:grid-cols-3 xl:grid-cols-5">
                 {games.map((game) => (
-                  <div
+                  <Link
                     key={game.title}
+                    href={game.href}
                     onClick={() => setGamesOpen(false)}
-                    className="group cursor-pointer"
+                    className="group block"
                   >
                     <div className="overflow-hidden rounded-2xl lg:rounded-3xl">
                       <img
@@ -206,7 +214,7 @@ export default function Navbar() {
                     <p className="mt-3 text-base font-semibold text-neutral-900 lg:mt-4 lg:text-lg xl:text-xl">
                       {game.title}
                     </p>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>
@@ -240,6 +248,7 @@ export default function Navbar() {
               <li key={item.title}>
                 <Link
                   href={item.href}
+                  onClick={() => setMenuOpen(false)}
                   className={`text-4xl font-semibold transition ${
                     pathname === item.href
                       ? "text-white underline underline-offset-8"

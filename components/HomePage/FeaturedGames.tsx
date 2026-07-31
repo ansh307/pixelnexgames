@@ -6,27 +6,42 @@ export const games = [
     title: "Clash of Clans",
     category: "ACTION",
     image: "/homepage/img/featured-games/coc.jpg",
+    href: "/#featured-games",
     featured: true,
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
   },
   {
     title: "Brawl Stars",
     category: "ACTION",
     image: "/homepage/img/featured-games/bs.jpg",
+    href: "/#featured-games",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
   },
   {
     title: "Clash Royale",
     category: "ACTION",
     image: "/homepage/img/featured-games/cr.jpg",
+    href: "/#featured-games",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
   },
   {
     title: "Hay Day",
     category: "SIMULATION",
     image: "/homepage/img/featured-games/hay-day.jpg",
+    href: "/#featured-games",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
   },
   {
     title: "Squad Busters",
     category: "ACTION",
     image: "/homepage/img/featured-games/sb.jpg",
+    href: "/#featured-games",
+    playStoreUrl:
+      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
   },
 ];
 
@@ -35,7 +50,10 @@ export default function FeaturedGames() {
   const rest = games.slice(1);
 
   return (
-    <section className="bg-[#F4F4F4] py-20 sm:py-28 lg:py-40">
+    <section
+      id="featured-games"
+      className="bg-[#F4F4F4] py-20 sm:py-28 lg:py-40"
+    >
       <div className="mx-auto max-w-[1580px] px-4 sm:px-6">
         {/* Heading */}
 
@@ -77,6 +95,7 @@ type Game = {
   title: string;
   category: string;
   image: string;
+  playStoreUrl: string;
 };
 
 function GameCard({
@@ -124,7 +143,9 @@ function GameCard({
         </h3>
 
         <Link
-          href="#"
+          href={game.playStoreUrl}
+          target="_blank"
+          rel="noopener noreferrer"
           className="mt-8 sm:mt-10 lg:mt-12 inline-flex w-fit rounded-full border border-white/40 bg-white/5 px-6 sm:px-8 lg:px-12 py-3 sm:py-4 lg:py-5 text-base sm:text-lg lg:text-xl font-semibold text-white backdrop-blur-xl transition hover:bg-white hover:text-black"
         >
           View game

@@ -18,7 +18,7 @@ const FAQsPage = () => {
           </>
         }
         description="Find answers to the most common questions about PixelNex, our games, accounts, purchases, and technical support."
-        image="/homepage/img/faqs-hero.png"
+        image="/banners/faqs-hero.avif"
         imageAlt="FAQs"
       />
 

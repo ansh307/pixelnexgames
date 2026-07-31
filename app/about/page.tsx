@@ -20,7 +20,7 @@ const AboutPage = () => {
           </>
         }
         description="We're crafting unforgettable worlds, memorable characters, and gameplay experiences enjoyed by millions of players around the globe."
-        image="/homepage/img/about-hero.png"
+        image="/banners/about-hero.avif"
         imageAlt="About PixelNex"
       />
       <WhoWeAre />
