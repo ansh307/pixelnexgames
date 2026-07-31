@@ -5,7 +5,7 @@ import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 const studioLinks = [
   { title: "Home", href: "/" },
   { title: "About", href: "/about" },
-  { title: "Contact", href: "#" },
+  { title: "Contact", href: "/contact" },
 ];
 
 const gameLinks = [
@@ -17,10 +17,10 @@ const gameLinks = [
 ];
 
 const supportLinks = [
-  { title: "Help Center", href: "#" },
-  { title: "FAQs", href: "#" },
-  { title: "Privacy Policy", href: "#" },
-  { title: "Terms of Service", href: "#" },
+  { title: "Support", href: "/support" },
+  { title: "FAQs", href: "/faqs" },
+  { title: "Privacy Policy", href: "/privacy-policy" },
+  { title: "Terms of Service", href: "/terms-of-service" },
 ];
 
 export default function Footer() {

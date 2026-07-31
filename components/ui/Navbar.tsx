@@ -14,9 +14,9 @@ const links = [
   { title: "Home", href: "/" },
   { title: "Games", href: "#" },
   { title: "About", href: "/about" },
-  { title: "FAQs", href: "#" },
-  { title: "Support", href: "#" },
-  { title: "Contact", href: "#" },
+  { title: "FAQs", href: "/faqs" },
+  { title: "Support", href: "/support" },
+  { title: "Contact", href: "/contact" },
 ];
 
 export default function Navbar() {
@@ -120,7 +120,7 @@ export default function Navbar() {
           {/* Desktop Button */}
 
           <Link
-            href="#"
+            href="/contact"
             className="hidden rounded-full border border-orange-500 px-8 py-3.5 text-[16px] font-semibold transition hover:bg-orange-500 hover:text-white lg:inline-block"
           >
             Contact
