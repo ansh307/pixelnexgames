@@ -33,21 +33,21 @@ export default function Hero() {
               </span>
 
               <span className="mt-2 sm:mt-3 block text-4xl sm:text-5xl md:text-6xl lg:text-8xl">
-                to <span className="text-[#F26539]">PixelNex</span>
+                to <span className="text-orange-500">PixelNex</span>
               </span>
             </h1>
 
             {/* CTA */}
             <button className="group mt-8 sm:mt-10 lg:mt-14 flex items-center gap-3 sm:gap-4 rounded-full bg-white/15 px-4 sm:px-5 lg:px-6 py-3 sm:py-4 lg:py-5 backdrop-blur-xl transition-all duration-300 hover:bg-white/20">
               <div className="flex h-12 w-12 sm:h-14 sm:w-14 items-center justify-center rounded-full bg-white">
-                <Gamepad2 size={24} className="text-[#F26539] sm:hidden" />
+                <Gamepad2 size={24} className="text-orange-500 sm:hidden" />
                 <Gamepad2
                   size={30}
-                  className="hidden sm:block lg:hidden text-[#F26539]"
+                  className="hidden sm:block lg:hidden text-orange-500"
                 />
                 <Gamepad2
                   size={36}
-                  className="hidden lg:block text-[#F26539]"
+                  className="hidden lg:block text-orange-500"
                 />
               </div>
 

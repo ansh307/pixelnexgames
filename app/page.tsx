@@ -6,11 +6,11 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main>
+    <>
       <Hero />
       <AboutSection />
       <FeaturedGames />
       <CTASection />
-    </main>
+    </>
   );
 }

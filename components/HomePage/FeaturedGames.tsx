@@ -37,7 +37,7 @@ export default function FeaturedGames() {
   const rest = games.slice(1);
 
   return (
-    <section className="bg-[#F2F2F2] py-20 sm:py-28 lg:py-40">
+    <section className="bg-[#F4F4F4] py-20 sm:py-28 lg:py-40">
       <div className="mx-auto max-w-[1580px] px-4 sm:px-6">
         {/* Heading */}
 
@@ -47,7 +47,7 @@ export default function FeaturedGames() {
           </p>
 
           <h2 className="mt-3 sm:mt-5 text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight text-neutral-900">
-            Some of our <span className="text-[#F26539]">games</span>
+            Some of our <span className="text-orange-500">games</span>
           </h2>
         </div>
 

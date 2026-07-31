@@ -39,7 +39,7 @@ export default function CTASection() {
           <div className="flex w-full lg:w-[45%] flex-col justify-start p-6 sm:p-8 lg:p-12">
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight tracking-tight">
               {cards[0].title}{" "}
-              <span className="text-[#F26539]">{cards[0].highlight}</span>
+              <span className="text-orange-500">{cards[0].highlight}</span>
             </h2>
 
             <button className="mt-6 sm:mt-8 lg:mt-10 w-fit rounded-full border border-neutral-400 px-6 sm:px-8 lg:px-10 py-3 lg:py-4 text-base lg:text-lg font-semibold transition-all duration-300 hover:bg-orange-500 hover:text-white">
@@ -69,7 +69,7 @@ export default function CTASection() {
               <div className="relative z-10 p-6 sm:p-8 lg:p-12">
                 <h3 className="max-w-md text-3xl sm:text-4xl font-bold leading-tight">
                   {card.title}{" "}
-                  <span className="text-[#F26539]">{card.highlight}</span>
+                  <span className="text-orange-500">{card.highlight}</span>
                 </h3>
 
                 <button className="mt-6 sm:mt-8 lg:mt-10 rounded-full border border-neutral-400 px-6 sm:px-8 lg:px-10 py-3 lg:py-4 text-base lg:text-lg font-semibold transition-all duration-300 hover:bg-orange-500 hover:text-white">

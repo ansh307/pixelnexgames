@@ -2,7 +2,11 @@ import Link from "next/link";
 import { Blocks } from "lucide-react";
 import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
 
-const studioLinks = ["About", "Games", "Contact"];
+const studioLinks = [
+  { title: "Home", href: "/" },
+  { title: "About", href: "/about" },
+  { title: "Contact", href: "#" },
+];
 
 const gameLinks = [
   "Cyber Arena",
@@ -13,10 +17,10 @@ const gameLinks = [
 ];
 
 const supportLinks = [
-  "Help Center",
-  "FAQs",
-  "Privacy Policy",
-  "Terms of Service",
+  { title: "Help Center", href: "#" },
+  { title: "FAQs", href: "#" },
+  { title: "Privacy Policy", href: "#" },
+  { title: "Terms of Service", href: "#" },
 ];
 
 export default function Footer() {
@@ -33,12 +37,12 @@ export default function Footer() {
 
             <ul className="space-y-3 sm:space-y-4 lg:space-y-5">
               {studioLinks.map((link) => (
-                <li key={link}>
+                <li key={link.title}>
                   <Link
-                    href="#"
+                    href={link.href}
                     className="text-base lg:text-lg text-neutral-700 transition hover:text-orange-500"
                   >
-                    {link}
+                    {link.title}
                   </Link>
                 </li>
               ))}
@@ -75,12 +79,12 @@ export default function Footer() {
 
             <ul className="space-y-3 sm:space-y-4 lg:space-y-5">
               {supportLinks.map((link) => (
-                <li key={link}>
+                <li key={link.title}>
                   <Link
-                    href="#"
+                    href={link.href}
                     className="text-base lg:text-lg text-neutral-700 transition hover:text-orange-500"
                   >
-                    {link}
+                    {link.title}
                   </Link>
                 </li>
               ))}

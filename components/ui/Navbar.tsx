@@ -13,7 +13,7 @@ gsap.registerPlugin(ScrollTrigger);
 const links = [
   { title: "Home", href: "/" },
   { title: "Games", href: "#" },
-  { title: "About", href: "#" },
+  { title: "About", href: "/about" },
   { title: "FAQs", href: "#" },
   { title: "Support", href: "#" },
   { title: "Contact", href: "#" },
