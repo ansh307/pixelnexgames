@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const games = [
+export const games = [
   {
     title: "Clash of Clans",
     category: "ACTION",
@@ -64,12 +64,9 @@ export default function FeaturedGames() {
         {/* Button */}
 
         <div className="mt-10 sm:mt-14 lg:mt-16 flex justify-center">
-          <Link
-            href="/games"
-            className="rounded-full border border-neutral-400 px-8 sm:px-10 lg:px-14 py-3 lg:py-4 text-base lg:text-lg font-semibold transition hover:bg-orange-500 hover:text-white"
-          >
+          <div className="cursor-pointer rounded-full border border-neutral-400 px-8 sm:px-10 lg:px-14 py-3 lg:py-4 text-base lg:text-lg font-semibold transition hover:bg-orange-500 hover:text-white">
             Coming Soon
-          </Link>
+          </div>
         </div>
       </div>
     </section>

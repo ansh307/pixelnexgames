@@ -19,7 +19,7 @@ export default function PageHero({
 }: PageHeroProps) {
   return (
     <section id="hero" className={`${backgroundColor} pt-28 lg:pt-36`}>
-      <div className="mx-auto flex max-w-[1600px] flex-col items-center px-6 lg:h-[720px] lg:flex-row lg:justify-between">
+      <div className="mx-auto flex max-w-[1600px] flex-col items-center px-6 lg:h-[720px] lg:flex-row lg:justify-between mt-20 lg:mt-0">
         {/* Left */}
 
         <div className="z-10 max-w-3xl">

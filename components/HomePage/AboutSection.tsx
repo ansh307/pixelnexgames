@@ -18,7 +18,7 @@ export default function AboutSection() {
         </h2>
 
         <Link
-          href="#"
+          href="/about"
           className="mt-14 rounded-full border border-neutral-400 px-12 py-4 text-lg font-semibold transition-all duration-300 hover:bg-orange-500 hover:text-white"
         >
           Learn more

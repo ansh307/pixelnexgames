@@ -80,7 +80,7 @@ ${form.message}
         className="w-full resize-none rounded-2xl border border-neutral-300 bg-neutral-50 px-5 py-4 outline-none transition focus:border-orange-500"
       />
 
-      <button className="inline-flex items-center gap-3 rounded-full bg-orange-500 px-8 py-4 font-semibold text-white transition hover:bg-orange-600">
+      <button className="inline-flex items-center gap-3 rounded-full border border-neutral-400  px-8 py-4 font-semibold transition-all duration-300 hover:bg-orange-500 hover:text-white">
         Send Message
         <ArrowRight size={18} />
       </button>
