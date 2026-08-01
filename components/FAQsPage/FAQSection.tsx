@@ -12,7 +12,7 @@ const faqs = [
   {
     question: "Where can I download your games?",
     answer:
-      "Our games are available on major platforms including Google Play, the App Store, Steam, and other supported digital marketplaces depending on the title.",
+      "Our games are available on Google Playstore. We will provide direct download links on our website for each game.",
   },
   {
     question: "Are PixelNex games free to play?",
@@ -28,11 +28,6 @@ const faqs = [
     question: "How do I contact PixelNex?",
     answer:
       "Visit our Contact page to reach our team for business inquiries, partnerships, media requests, or general support.",
-  },
-  {
-    question: "Can I join the PixelNex team?",
-    answer:
-      "Absolutely! Visit our Careers page to explore current job openings and internship opportunities.",
   },
 ];
 

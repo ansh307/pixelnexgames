@@ -196,9 +196,9 @@ export default function Navbar() {
           >
             <div className="mx-auto max-w-[1800px] px-6 py-8 lg:px-10 xl:px-14">
               <div className="grid grid-cols-2 gap-6 lg:grid-cols-3 xl:grid-cols-5">
-                {games.map((game) => (
+                {games.map((game, idx) => (
                   <Link
-                    key={game.title}
+                    key={game.title + idx}
                     href={game.href}
                     onClick={() => setGamesOpen(false)}
                     className="group block"

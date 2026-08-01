@@ -38,7 +38,7 @@ export default function PageHero({
 
         {/* Right */}
 
-        <div className="relative mt-16 h-[380px] w-full max-w-xl sm:h-[500px] lg:mt-0 lg:h-[680px] lg:max-w-[800px]">
+        <div className="relative mt-16 h-[250px] w-full max-w-xl sm:h-[450px] lg:mt-0 lg:h-[680px] lg:max-w-[800px]">
           <Image
             src={image}
             alt={imageAlt}

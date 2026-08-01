@@ -1,6 +1,12 @@
 import Link from "next/link";
 import { Blocks } from "lucide-react";
-import { BsFacebook, BsInstagram, BsTwitter, BsYoutube } from "react-icons/bs";
+import {
+  BsDiscord,
+  BsFacebook,
+  BsInstagram,
+  BsTwitterX,
+  BsYoutube,
+} from "react-icons/bs";
 
 const studioLinks = [
   { title: "Home", href: "/" },
@@ -9,11 +15,11 @@ const studioLinks = [
 ];
 
 const gameLinks = [
-  "Cyber Arena",
-  "Pixel Rush",
-  "Dragon Quest",
-  "Space Hunters",
-  "All Games",
+  "ArrowOut",
+  "Coming Soon",
+  "Coming Soon",
+  "Coming Soon",
+  "Coming Soon",
 ];
 
 const supportLinks = [
@@ -57,8 +63,8 @@ export default function Footer() {
             </h3>
 
             <ul className="space-y-3 sm:space-y-4 lg:space-y-5">
-              {gameLinks.map((link) => (
-                <li key={link}>
+              {gameLinks.map((link, idx) => (
+                <li key={link + idx}>
                   <Link
                     href="#"
                     className="text-base lg:text-lg text-neutral-700 transition hover:text-orange-500"
@@ -114,7 +120,7 @@ export default function Footer() {
             {/* Social */}
 
             <div className="mt-6 sm:mt-8 flex gap-3 sm:gap-4">
-              {[BsFacebook, BsInstagram, BsTwitter, BsYoutube].map(
+              {[BsFacebook, BsInstagram, BsTwitterX, BsYoutube, BsDiscord].map(
                 (Icon, index) => (
                   <Link
                     key={index}

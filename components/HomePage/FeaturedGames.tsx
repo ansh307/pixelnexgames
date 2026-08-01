@@ -3,45 +3,40 @@ import Link from "next/link";
 
 export const games = [
   {
-    title: "Clash of Clans",
+    title: "ArrowOut",
     category: "ACTION",
-    image: "/homepage/img/featured-games/coc.jpg",
+    image: "/homepage/img/featured-games/arrow-out.png",
     href: "/#featured-games",
     featured: true,
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
+    playStoreUrl: "#",
   },
   {
-    title: "Brawl Stars",
+    title: "Coming Soon",
     category: "ACTION",
-    image: "/homepage/img/featured-games/bs.jpg",
+    image: "/homepage/img/featured-games/coming-soon.png",
     href: "/#featured-games",
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
+    playStoreUrl: "#",
   },
   {
-    title: "Clash Royale",
+    title: "Coming Soon",
     category: "ACTION",
-    image: "/homepage/img/featured-games/cr.jpg",
+    image: "/homepage/img/featured-games/coming-soon.png",
     href: "/#featured-games",
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
+    playStoreUrl: "#",
   },
   {
-    title: "Hay Day",
+    title: "Coming Soon",
     category: "SIMULATION",
-    image: "/homepage/img/featured-games/hay-day.jpg",
+    image: "/homepage/img/featured-games/coming-soon.png",
     href: "/#featured-games",
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
+    playStoreUrl: "#",
   },
   {
-    title: "Squad Busters",
+    title: "Coming Soon",
     category: "ACTION",
-    image: "/homepage/img/featured-games/sb.jpg",
+    image: "/homepage/img/featured-games/coming-soon.png",
     href: "/#featured-games",
-    playStoreUrl:
-      "https://play.google.com/store/apps/details?id=com.supercell.clashofclans",
+    playStoreUrl: "#",
   },
 ];
 
@@ -74,8 +69,8 @@ export default function FeaturedGames() {
         {/* Grid */}
 
         <div className="mt-6 sm:mt-8 grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
-          {rest.map((game) => (
-            <GameCard key={game.title} game={game} />
+          {rest.map((game, idx) => (
+            <GameCard key={game.title + idx} game={game} />
           ))}
         </div>
 

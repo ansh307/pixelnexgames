@@ -14,7 +14,7 @@ export default function Hero() {
           poster="/homepage/img/hero-poster.avif"
           className="absolute inset-0 h-full w-full object-cover"
         >
-          <source src="/homepage/videos/hero.mp4" type="video/mp4" />
+          <source src="/homepage/videos/temp.mp4" type="video/mp4" />
         </video>
 
         {/* Overlay */}

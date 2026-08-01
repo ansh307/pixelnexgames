@@ -57,7 +57,7 @@ export default function ContactSection() {
                   </div>
                 </div>
 
-                <div className="flex gap-5">
+                {/* <div className="flex gap-5">
                   <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-orange-50">
                     <Phone className="text-orange-500" />
                   </div>
@@ -67,7 +67,7 @@ export default function ContactSection() {
 
                     <p className="mt-1 text-neutral-600">+91 12345 67890</p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
 
